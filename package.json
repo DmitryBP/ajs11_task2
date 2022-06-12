@@ -1,0 +1,43 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "webpack starting tamplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryBP/WebPack-Template.git"
+  },
+  "author": "DmitryBP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitryBP/WebPack-Template/issues"
+  },
+  "homepage": "https://github.com/DmitryBP/WebPack-Template#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-jest": "^28.1.1",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "core-js": "^3.22.8"
+  }
+}
