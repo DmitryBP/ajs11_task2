@@ -7,7 +7,8 @@
     "test": "jest",
     "lint": "eslint .",
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "core-js": "^3.22.8"
+    "core-js": "^3.22.8",
+    "husky": "^8.0.1"
   }
 }
