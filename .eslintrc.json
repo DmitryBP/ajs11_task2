@@ -12,9 +12,12 @@
         "sourceType": "module"
     },
     "rules": {
+       "no-console": [
+            "off"
+       ],
+
         "no-plusplus": [
-            "error",
-            { "allowForLoopAfterthoughts": true }
+            "off"
         ],
         "no-underscore-dangle": [
             "error",
