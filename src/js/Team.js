@@ -11,21 +11,11 @@ export default class Team {
     } else throw new Error('Неверный формат');
   }
 
-  [Symbol.iterator]() {
+  * [Symbol.iterator]() {
     const { teamMembers } = this;
-    let { index } = this;
-    return {
-      next() {
-        if (index < teamMembers.length) {
-          return {
-            value: teamMembers[index++],
-            done: false,
-          };
-        }
-        return {
-          done: true,
-        };
-      },
-    };
+    let { i } = this;
+    for (i = 0; i < teamMembers.length; i++) {
+      yield this.teamMembers[i];
+    }
   }
 }
